@@ -1,0 +1,33 @@
+<!DOCTYPE Html>
+<!DOCTYPE Html>
+<html>
+<head>
+<title>My First Javascript class</title>
+</head>
+<body>    
+<script type="text/javascript">
+
+class Person {
+    constructor(name, fname) {
+        this.name = name;
+    }
+
+    myName() {
+        return "Hello my name is " + this.name;
+    }
+}
+
+class Human extends Person {
+    constructor(name, age) {
+       super()
+       this.name = name;
+       this.age = age;
+    }
+}
+
+let myInfo = new Human('Ali', 31);
+document.getElementById('info').innerHTML = myInfo.name + ' ' + myInfo.age;
+    
+</script>
+</body>
+</html>
