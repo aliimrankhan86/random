@@ -1,0 +1,32 @@
+<!DOCTYPE Html>
+<html>
+<head>
+<title>My First Javascript class</title>
+</head>
+<body>    
+<script type="text/javascript">
+class Girl {
+    constructor(name, rating) {
+        this.name = name;
+        this.rating = rating
+    }
+    // method
+    catwalk () {
+        console.log(this.name + ' walks on red carpet and gets ' + this.rating + ' points');
+    }
+}
+    
+let hottie = new Girl('Sasha', 10);
+console.log(hottie.name + ' ' +hottie.rating);
+console.log(hottie.catwalk());
+    
+let hottie2 = new Girl('Kelly', 20);
+console.log(hottie2.catwalk());
+    
+    
+    
+    
+    
+</script>
+</body>
+</html>
